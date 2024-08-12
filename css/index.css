@@ -1,0 +1,943 @@
+/* CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.all-content {
+  /* background: #f7f5f2; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #b2744c;
+  border-radius: 10px;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+@media only screen {
+  .container-fluid {
+    padding: 0 10px;
+  }
+  .navbar-brand img {
+    max-width: 150px;
+  }
+  #navbar .nav-link {
+    font-size: 14px;
+  }
+}
+
+/* NAVBAR SECTION */
+.all-content .container {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+  position: fixed;
+  top: 35px;
+  left: 75px;
+  z-index: 40;
+}
+
+.all-content .container .navbar {
+  width: 100%;
+}
+
+/* .all-content .container .navbar .container-fluid #logo {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 120px;
+}
+
+
+.all-content .container .navbar .container-fluid #navbarSupportedContent {
+  margin-left: auto;
+  display: flex;
+  gap: 51px;
+} */
+
+/* HOME SECTION */
+.all-content #home {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.all-content #home .cover-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.all-content #home .cover-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.all-content #home .cover-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 208, 255, 0),
+    rgba(0, 208, 255, 0.1),
+    rgba(0, 208, 255, 1.1)
+  );
+}
+
+.all-content #home .cover-container .container-thai {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+}
+
+.all-content #home .cover-container .container-thai .custom-row {
+  display: flex;
+  height: 38vh;
+  /* background-color: blue; */
+  margin: 0;
+}
+
+.all-content #home .cover-container .container-thai .custom-row .kolom1 {
+  display: flex;
+  /* width: 50%; */
+  margin: 0;
+  padding: 0;
+}
+
+.all-content #home .cover-container .container-thai .custom-row .kolom1 img {
+  object-fit: contain;
+  width: 50%;
+  height: 75%;
+}
+
+.all-content
+  #home
+  .cover-container
+  .container-thai
+  .custom-row
+  .kolom1
+  .container-bottom {
+  /* background-color: blue; */
+  width: 100%;
+  position: relative;
+}
+
+.all-content
+  #home
+  .cover-container
+  .container-thai
+  .custom-row
+  .kolom1
+  .container-bottom
+  .custom
+  .konten {
+  width: 30%;
+  height: 15%;
+  background-color: #ffc73c;
+  border-radius: 100px;
+  text-align: center;
+  padding: 5px 15px;
+  position: absolute;
+  top: 80%;
+  left: 90px;
+}
+
+.all-content
+  #home
+  .cover-container
+  .container-thai
+  .custom-row
+  .kolom1
+  .container-bottom
+  .konten
+  a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.all-content #home .cover-container .container-thai .custom-row .kolom2 {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.all-content
+  #home
+  .cover-container
+  .container-thai
+  .custom-row
+  .kolom2
+  .container-kanan {
+  width: 100%;
+  position: relative;
+  /* background-color: black; */
+  padding: 0;
+  margin: 0;
+}
+
+.all-content
+  #home
+  .cover-container
+  .container-thai
+  .custom-row
+  .kolom2
+  .container-kanan
+  .row-custom {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.all-content
+  #home
+  .cover-container
+  .container-thai
+  .custom-row
+  .kolom2
+  .container-kanan
+  .row-custom
+  .kolom1 {
+  /* background-color: aqua; */
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.all-content
+  #home
+  .cover-container
+  .container-thai
+  .custom-row
+  .kolom2
+  .container-kanan
+  .row-custom
+  .kolom1
+  img {
+  object-fit: cover;
+  width: 75%;
+  height: 95%;
+  position: absolute;
+  border-radius: 32px;
+}
+
+.all-content
+  #home
+  .cover-container
+  .container-thai
+  .custom-row
+  .kolom2
+  .container-kanan
+  .kolom2 {
+  /* background-color: #b2744c; */
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.all-content
+  #home
+  .cover-container
+  .container-thai
+  .custom-row
+  .kolom2
+  .container-kanan
+  .row-custom
+  .kolom2
+  img {
+  object-fit: cover;
+  width: 75%;
+  height: 95%;
+  position: absolute;
+  border-radius: 32px;
+  object-position: 0% 15%;
+}
+
+.all-content
+  #home
+  .cover-container
+  .container-thai
+  .custom-row
+  .kolom2
+  .container-kanan
+  .kolom3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.all-content
+  #home
+  .cover-container
+  .container-thai
+  .custom-row
+  .kolom2
+  .container-kanan
+  .row-custom
+  .kolom3
+  img {
+  object-fit: cover;
+  width: 100%;
+  height: 95%;
+  position: absolute;
+  border-radius: 32px 0px 0px 32px;
+  object-position: 16%;
+}
+
+/* TENTANG PROGRAM */
+.all-content #TentangProgram {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.all-content #TentangProgram .container-about {
+  background-color: #00d1ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.all-content #TentangProgram .container-about img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.all-content #TentangProgram .container-about .overlay-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 208, 255, 1.1),
+    rgba(0, 208, 255, 0.955),
+    rgba(0, 208, 255, 0.8)
+  );
+}
+
+.all-content #TentangProgram .container-about .konten {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+}
+
+.all-content #TentangProgram .container-about .row-about {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.all-content #TentangProgram .container-about .row-about .kolom1 {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.all-content #TentangProgram .container-about .row-about .kolom1 img {
+  width: 40%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.all-content #TentangProgram .container-about .row-about .kolom2 {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .program {
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 110px;
+}
+
+.all-content #TentangProgram .container-about .row-about .kolom2 .konten p {
+  color: #ffffff;
+  margin-right: 10%;
+  font-size: 15px;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .btn-konten {
+  width: 30%;
+  height: 5%;
+  background-color: #ffc73c;
+  border-radius: 100px;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .btn-konten
+  a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .Mekanisme {
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 50px;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  /* background-color: black; */
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background-color: #ffc73c; */
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom11 {
+  width: 100%;
+  height: 35%;
+  position: relative;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom11
+  img {
+  width: 30px;
+  height: 80px;
+  object-fit: contain;
+  position: absolute;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom11
+  .judul {
+  color: #ffffff;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom11
+  .tgl {
+  color: #ffe03c;
+  margin-left: 40px;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom11
+  .isi {
+  color: #ffffff;
+  margin-left: 40px;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom22 {
+  width: 100%;
+  height: 35%;
+  position: relative;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom22
+  img {
+  width: 30px;
+  height: 80px;
+  object-fit: contain;
+  position: absolute;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom22
+  .judul {
+  color: #ffffff;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom22
+  .tgl {
+  color: #ffe03c;
+  margin-left: 40px;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom22
+  .isi {
+  color: #ffffff;
+  margin-left: 40px;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom33 {
+  width: 100%;
+  height: 35%;
+  position: relative;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom33
+  img {
+  width: 30px;
+  height: 60px;
+  object-fit: contain;
+  position: absolute;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom33
+  .judul {
+  color: #ffffff;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom33
+  .tgl {
+  color: #ffe03c;
+  margin-left: 40px;
+}
+
+.all-content
+  #TentangProgram
+  .container-about
+  .row-about
+  .kolom2
+  .konten
+  .container-mekanisme
+  .Row-Mekanisme
+  .kolom33
+  .isi {
+  color: #ffffff;
+  margin-left: 40px;
+}
+
+/* SECTION BERITA */
+.all-content #Berita {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.all-content #Berita .container-berita {
+  background-color: #00d1ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.all-content #Berita .container-berita img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.all-content #Berita .container-berita .overlay-berita {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.all-content #Berita .container-berita .konten {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.all-content #Berita .container-berita .konten .row-berita {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.all-content #Berita .container-berita .konten .row-berita .col1 {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.all-content #Berita .container-berita .konten .row-berita .col1 .logo-berita {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.all-content
+  #Berita
+  .container-berita
+  .konten
+  .row-berita
+  .col1
+  .logo-berita
+  .imgBerita {
+  width: 45%;
+  height: auto;
+  padding-top: 100px;
+  margin-left: 80px;
+  z-index: 10;
+  position: absolute;
+}
+
+.all-content #Berita .container-berita .konten .row-berita .col1 .artikel {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  position: relative;
+}
+
+.all-content
+  #Berita
+  .container-berita
+  .konten
+  .row-berita
+  .col1
+  .artikel
+  .thumbnail {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+  padding-top: 80px;
+  margin-left: 80px;
+  border-radius: 38px 38px 38px 38px;
+  position: relative;
+}
+
+.all-content
+  #Berita
+  .container-berita
+  .konten
+  .row-berita
+  .col1
+  .artikel
+  .thumbnail
+  .overlay-artikel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 208, 255, 0),
+    rgba(0, 208, 255, 0.4),
+    rgba(0, 208, 255, 1)
+  );
+}
+
+.all-content #Berita .container-berita .konten .row-berita .col2 {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.all-content #Berita .container-berita .konten .row-berita .col2 .artikel2 {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  position: relative;
+}
+
+.all-content
+  #Berita
+  .container-berita
+  .konten
+  .row-berita
+  .col2
+  .artikel2
+  .satu {
+  width: 70%;
+  height: 20%;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.all-content
+  #Berita
+  .container-berita
+  .konten
+  .row-berita
+  .col2
+  .artikel2
+  .satu
+  .thumbnail2 {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 32px;
+  position: absolute;
+}
+
+.all-content
+  #Berita
+  .container-berita
+  .konten
+  .row-berita
+  .col2
+  .artikel2
+  .dua {
+  width: 70%;
+  height: 20%;
+  margin-bottom: 70px;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.all-content
+  #Berita
+  .container-berita
+  .konten
+  .row-berita
+  .col2
+  .artikel2
+  .dua
+  .thumbnail3 {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 32px;
+  position: absolute;
+}
+
+.all-content
+  #Berita
+  .container-berita
+  .konten
+  .row-berita
+  .col2
+  .artikel2
+  .tiga {
+  width: 70%;
+  height: 20%;
+  margin-bottom: 20px;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.all-content
+  #Berita
+  .container-berita
+  .konten
+  .row-berita
+  .col2
+  .artikel2
+  .tiga
+  .thumbnail4 {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 32px;
+  position: absolute;
+}
+
+/* SECTION INFO */
+.all-content #Info {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.all-content #Info .container-info {
+  background-color: #00d1ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
